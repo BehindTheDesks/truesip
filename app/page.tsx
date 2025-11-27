@@ -68,7 +68,7 @@ export default function ComingSoon() {
       <header className="relative z-10 flex items-center justify-between px-6 py-6 md:px-12 md:py-8">
         <div className="flex items-center gap-3">
           {/* TrueSip Logo Icon */}
-          <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
+          <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center">
             <img
               src="/images/image-removebg-preview-20-2817-29.png"
               alt="TrueSip Logo"
@@ -77,7 +77,7 @@ export default function ComingSoon() {
           </div>
           <div>
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-sandstone font-sans">TrueSip</h1>
-            <p className="text-xs md:text-sm text-golden-lime/80 font-light">Verify. Trust. Enjoy.</p>
+            <p className="text-xs md:text-sm text-golden-lime/80 font-light">Verify Every Sip. Protect Every Life</p>
           </div>
         </div>
         <Badge
@@ -96,9 +96,9 @@ export default function ComingSoon() {
             <div className="inline-block mb-6 md:mb-8">
               <Badge
                 variant="secondary"
-                className="bg-fresh-leaf/20 text-fresh-leaf border-fresh-leaf/40 text-sm md:text-base px-4 py-2 animate-bounce"
+                className="bg-fresh-leaf/20 text-fresh-leaf border-fresh-leaf/40 text-lg md:text-xl px-6 py-3 animate-bounce"
               >
-                🔍 Launching Soon
+                🔍 Coming Soon
               </Badge>
             </div>
 
@@ -223,13 +223,17 @@ export default function ComingSoon() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sandstone/60 text-sm">© 2025 TrueSip. Making safe drinking natural.</p>
             <div className="flex gap-6">
-              {["Twitter", "Instagram", "LinkedIn"].map((social) => (
+              {[
+                { name: "Twitter", url: "#" },
+                { name: "Instagram", url: "https://www.instagram.com/truesipng?igsh=MXB4ZHB0bzh0N3Z4dQ==" },
+                { name: "LinkedIn", url: "#" },
+              ].map((social) => (
                 <a
-                  key={social}
-                  href="#"
+                  key={social.name}
+                  href={social.url}
                   className="text-golden-lime/60 hover:text-golden-lime transition-colors duration-300 text-sm"
                 >
-                  {social}
+                  {social.name}
                 </a>
               ))}
             </div>
