@@ -1,0 +1,131 @@
+# =========================
+# Node / JavaScript Projects
+# =========================
+
+# Dependencies
+node_modules/
+
+# Output directories
+dist/
+build/
+out/
+.next/
+.vercel/
+.svelte-kit/
+.nuxt/
+
+# Temp files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+.yarn-integrity
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# =========================
+# Next.js
+# =========================
+.next/
+.next/static/
+.next/cache/
+
+# SWC build artifacts (prevents giant files)
+swc/
+*.swc
+*.node
+
+# =========================
+# OS Generated Files
+# =========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# =========================
+# IDEs / Editors
+# =========================
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iml
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# =========================
+# Logs / Debug
+# =========================
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Others
+# =========================
+
+# Cache
+.cache/
+tmp/
+temp/
+
+# Coverage tools
+coverage/
+.nyc_output/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Audio/Video/Binary
+*.zip
+*.tar
+*.rar
+*.gz
+*.7z
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.exe
+*.dll
+
+# Local DBs
+*.sqlite
+*.db
+
+# Firebase / Supabase local artifacts
+.functions/
+.supabase/
+
+# Storybook
+.storybook-out/
+
