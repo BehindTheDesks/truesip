@@ -6,7 +6,8 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
-
+import Image from "next/image";
+import logo from "@/public/images/true_sip_logo.png";
 
 export default function ComingSoon() {
   const [email, setEmail] = useState("")
@@ -66,17 +67,14 @@ export default function ComingSoon() {
 
       {/* Header */}
       <header className="relative z-10 flex items-center justify-between px-6 py-6 md:px-12 md:py-8">
-        <div className="flex items-center gap-3">
+        <div className="flex gap-5 items-center justify-center flex-col">
           {/* TrueSip Logo Icon */}
-          <div className="w-40 h-40 md:w-56 md:h-56 flex items-center justify-center">
-            <img
-              src="/images/image-removebg-preview-20-2817-29.png"
+            <Image
+              src={logo}
               alt="TrueSip Logo"
-              className="w-full h-full object-contain filter brightness-0 invert"
+              className=" w-32 md:w-64 "
             />
-          </div>
-          <div>
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-sandstone font-sans">TrueSip</h1>
+          <div className=" translate-x-16">
             <p className="text-xs md:text-sm text-golden-lime/80 font-light">Verify Every Sip. Protect Every Life</p>
           </div>
         </div>
@@ -97,12 +95,12 @@ export default function ComingSoon() {
               </Badge>
             </div>
 
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight tracking-tight text-balance">
+            <h2 className="text-4xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight tracking-tight text-balance">
               <span className="block text-sandstone mb-2">Fake alcohol is</span>
               <span className="block text-fresh-leaf animate-pulse">everywhere</span>
             </h2>
 
-            <p className="text-xl md:text-2xl lg:text-3xl text-golden-lime/90 mb-6 max-w-3xl mx-auto leading-relaxed font-light text-pretty">
+            <p className="text-lg md:text-2xl lg:text-3xl text-golden-lime/90 mb-6 max-w-3xl mx-auto leading-relaxed font-light text-pretty">
               How amazing would it feel to verify the authenticity of your drink?
             </p>
           </div>
