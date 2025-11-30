@@ -68,7 +68,7 @@ export default function ComingSoon() {
       <header className="relative z-10 flex items-center justify-between px-6 py-6 md:px-12 md:py-8">
         <div className="flex items-center gap-3">
           {/* TrueSip Logo Icon */}
-          <div className="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center">
+          <div className="w-40 h-40 md:w-56 md:h-56 flex items-center justify-center">
             <img
               src="/images/image-removebg-preview-20-2817-29.png"
               alt="TrueSip Logo"
@@ -80,12 +80,7 @@ export default function ComingSoon() {
             <p className="text-xs md:text-sm text-golden-lime/80 font-light">Verify Every Sip. Protect Every Life</p>
           </div>
         </div>
-        <Badge
-          variant="outline"
-          className="bg-golden-lime/10 text-golden-lime border-golden-lime/30 hidden md:inline-flex"
-        >
-          Coming Soon
-        </Badge>
+
       </header>
 
       {/* Main Content */}
@@ -119,9 +114,8 @@ export default function ComingSoon() {
                 {quotes.map((quote, index) => (
                   <p
                     key={index}
-                    className={`text-2xl md:text-4xl font-medium text-sandstone absolute transition-all duration-700 text-balance ${
-                      index === currentQuoteIndex ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-                    }`}
+                    className={`text-2xl md:text-4xl font-medium text-sandstone absolute transition-all duration-700 text-balance ${index === currentQuoteIndex ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                      }`}
                   >
                     "{quote}"
                   </p>
@@ -131,9 +125,8 @@ export default function ComingSoon() {
                 {quotes.map((_, index) => (
                   <div
                     key={index}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${
-                      index === currentQuoteIndex ? "w-12 bg-fresh-leaf" : "w-1.5 bg-fresh-leaf/30"
-                    }`}
+                    className={`h-1.5 rounded-full transition-all duration-300 ${index === currentQuoteIndex ? "w-12 bg-fresh-leaf" : "w-1.5 bg-fresh-leaf/30"
+                      }`}
                   />
                 ))}
               </div>
