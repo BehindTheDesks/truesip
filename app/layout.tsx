@@ -41,6 +41,7 @@ export default function RootLayout({
       <body className={`${geist.variable} ${geistMono.variable} ${poppins.variable} font-sans antialiased`}>
         {children}
         <Analytics />
+        
       </body>
     </html>
   )
