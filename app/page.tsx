@@ -66,7 +66,7 @@ export default function ComingSoon() {
       </div>
 
       {/* Header */}
-      <header className="relative z-10 flex items-center justify-between px-6 py-6 md:px-12 md:py-8">
+      <header className="relative z-10 flex items-center justify-between px-2 py-6 md:px-12 md:py-8">
         <div className="flex gap-2 items-center justify-center flex-col">
           {/* TrueSip Logo Icon */}
             <Image
