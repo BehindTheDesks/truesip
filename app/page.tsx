@@ -67,14 +67,14 @@ export default function ComingSoon() {
 
       {/* Header */}
       <header className="relative z-10 flex items-center justify-between px-6 py-6 md:px-12 md:py-8">
-        <div className="flex gap-5 items-center justify-center flex-col">
+        <div className="flex gap-2 items-center justify-center flex-col">
           {/* TrueSip Logo Icon */}
             <Image
               src={logo}
               alt="TrueSip Logo"
               className=" w-32 md:w-64 "
             />
-          <div className=" translate-x-16">
+          <div className=" translate-x-[70px] md:translate-x-16">
             <p className="text-xs md:text-sm text-golden-lime/80 font-light">Verify Every Sip. Protect Every Life</p>
           </div>
         </div>
